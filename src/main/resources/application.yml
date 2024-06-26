@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: sandbox
+security:
+  jwt:
+    secret-key: 8525c3f45e57ae380d610c2e4a4aa6c98d25d898628eaaf2a66f3ea40b69a8d4
