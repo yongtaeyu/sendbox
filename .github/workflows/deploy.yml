@@ -13,3 +13,8 @@ jobs:
     steps:
       - name: Hello World 찍기
         run: echo "hello world"
+
+      - name: 여러 명령어 문장 작성하기
+        run: |
+          echo "Good"
+          echo "하이루"
