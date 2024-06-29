@@ -36,7 +36,7 @@ public class SecurityConfig {
                 .sessionManagement(SessionManagementConfigurer->SessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests((request)->
                         request.requestMatchers("/members/sign-in").permitAll()
-                                    .requestMatchers("/members/excel", "/members/excelDownload").permitAll()
+                                    .requestMatchers("/members/hello","/members/excel", "/members/excelDownload").permitAll()
                                 .requestMatchers("/members/test").hasRole("USER")
                                 .anyRequest()
                                 .authenticated()

@@ -36,6 +36,11 @@ public class MemberController {
         return "success";
     }
 
+    @PostMapping("/hello")
+    public String test2() {
+        return "success";
+    }
+
     @PostMapping(value="/excel", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public void testExcel(MultipartFile file){
 
