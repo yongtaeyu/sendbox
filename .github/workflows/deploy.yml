@@ -44,5 +44,5 @@ jobs:
         run: aws deploy create-deployment
           --application-name deploy-test-server
           --deployment-config-name CodeDeployDefault.AllAtOnce
-          --deployment-group-name prod
+          --deployment-group-name Production
           --s3-location bucket=code-test-deploy,bundleType=tgz,key=$GITHUB_SHA.tar.gz
